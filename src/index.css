@@ -2,39 +2,45 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+/* Grid Shift Design System - Professional collective branding
 All colors MUST be HSL.
 */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 0 0% 6%;
+    --foreground: 0 0% 98%;
+    
+    /* Grid Shift Brand Colors */
+    --brand-coral: 9 100% 71%;
+    --brand-coral-light: 9 100% 80%;
+    --brand-dark: 0 0% 8%;
+    --brand-darker: 0 0% 4%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 0 0% 10%;
+    --card-foreground: 0 0% 98%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 8%;
+    --popover-foreground: 0 0% 98%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 9 100% 71%;
+    --primary-foreground: 0 0% 10%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 0 0% 12%;
+    --secondary-foreground: 0 0% 98%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 70%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 9 100% 71%;
+    --accent-foreground: 0 0% 10%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 0 0% 20%;
+    --input: 0 0% 15%;
+    --ring: 9 100% 71%;
 
     --radius: 0.5rem;
 
@@ -101,5 +107,77 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+/* Grid Shift Custom Animations and Effects */
+@layer utilities {
+  .grid-pattern {
+    background-image: 
+      linear-gradient(rgba(255, 107, 107, 0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 107, 107, 0.05) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+  
+  .grid-pattern-subtle {
+    background-image: 
+      linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    background-size: 60px 60px;
+  }
+  
+  .text-gradient {
+    background: linear-gradient(135deg, hsl(var(--foreground)), hsl(var(--accent)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .hover-lift {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .hover-lift:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px rgba(255, 107, 107, 0.1);
+  }
+}
+
+/* Better mobile spacing and typography */
+@media (max-width: 768px) {
+  .container {
+    @apply px-4;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply leading-tight;
+    letter-spacing: -0.025em;
+  }
+  
+  p {
+    @apply leading-relaxed;
+    letter-spacing: 0.01em;
+  }
+  
+  /* Better mobile section spacing */
+  section {
+    @apply py-12;
+  }
+  
+  /* Mobile-friendly cards */
+  .grid > * {
+    @apply mx-2;
+  }
+}
+
+/* Ensure responsive images */
+img {
+  @apply max-w-full h-auto;
+}
+
+/* Better button sizing on mobile */
+@media (max-width: 640px) {
+  .btn-mobile {
+    @apply w-full text-sm py-3;
   }
 }
