@@ -19,7 +19,7 @@ const Hero = () => {
           <img 
             src="/logos/GridShift-Full-T v2.png" 
             alt="GridShift" 
-            className="h-20 lg:h-28 xl:h-32 mx-auto opacity-90 hover:opacity-100 transition-opacity duration-500"
+            className="h-28 md:h-32 lg:h-36 xl:h-44 mx-auto opacity-95 hover:opacity-100 transition-opacity duration-500"
           />
         </div>
         

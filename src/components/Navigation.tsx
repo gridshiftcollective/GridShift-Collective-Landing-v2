@@ -27,7 +27,7 @@ const Navigation = () => {
             <img 
               src="/logos/GridShift-Mark-T v2.png" 
               alt="GridShift Logo" 
-              className="h-8 md:h-10"
+              className="h-10 md:h-12 lg:h-14"
             />
           </Link>
 
