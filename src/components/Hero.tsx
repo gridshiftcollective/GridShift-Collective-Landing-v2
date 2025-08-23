@@ -17,9 +17,9 @@ const Hero = () => {
         {/* Logo with smooth reveal - positioned closer to title */}
         <div className="mb-8 lg:mb-12 smooth-reveal">
           <img 
-            src="/logos/GridShift-Mark-T v2.png" 
+            src="/logos/GridShift-Full-T v2.png" 
             alt="GridShift" 
-            className="h-24 lg:h-32 xl:h-36 mx-auto opacity-90 hover:opacity-100 transition-opacity duration-500"
+            className="h-16 lg:h-20 xl:h-24 mx-auto opacity-90 hover:opacity-100 transition-opacity duration-500"
           />
         </div>
         
@@ -58,12 +58,6 @@ const Hero = () => {
         </div>
       </div>
       
-      {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 smooth-reveal smooth-reveal-delay-3">
-        <div className="w-6 h-10 border border-muted-foreground/20 rounded-full p-1">
-          <div className="w-1 h-3 bg-accent rounded-full mx-auto animate-bounce"></div>
-        </div>
-      </div>
     </section>
   );
 };
