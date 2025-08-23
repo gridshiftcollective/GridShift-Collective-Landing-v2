@@ -123,9 +123,15 @@ All colors MUST be HSL.
     background-size: 60px 60px;
   }
   
-  .grid-reveal {
+  /* Ensure the grid reveal animation is applied specifically to the grid-pattern
+     element so it doesn't get overridden by other animation shorthands like
+     .bg-drift. Use longhand animation properties to avoid shorthand conflicts. */
+  .grid-pattern.grid-reveal {
     opacity: 0;
-    animation: gridReveal 2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    animation-name: gridReveal;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+    animation-fill-mode: forwards;
     animation-delay: 0.5s;
   }
   
