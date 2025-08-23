@@ -118,9 +118,15 @@ All colors MUST be HSL.
 @layer utilities {
   .grid-pattern {
     background-image: 
-      linear-gradient(rgba(255, 107, 107, 0.05) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(255, 107, 107, 0.05) 1px, transparent 1px);
-    background-size: 40px 40px;
+      linear-gradient(rgba(255, 107, 107, 0.08) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 107, 107, 0.08) 1px, transparent 1px);
+    background-size: 60px 60px;
+  }
+  
+  .grid-reveal {
+    opacity: 0;
+    animation: gridReveal 2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    animation-delay: 0.5s;
   }
   
   .grid-pattern-subtle {
@@ -219,6 +225,17 @@ All colors MUST be HSL.
   25% { transform: translate(-10px, -5px); }
   50% { transform: translate(5px, -10px); }
   75% { transform: translate(-5px, 5px); }
+}
+
+@keyframes gridReveal {
+  0% { 
+    opacity: 0; 
+    transform: scale(1.1);
+  }
+  100% { 
+    opacity: 1; 
+    transform: scale(1);
+  }
 }
 
 /* Better mobile spacing and typography */
