@@ -19,8 +19,8 @@ const Hero = () => {
           <img 
             src="/logos/GridShift-Full-T v2.png" 
             alt="GridShift" 
-            className="w-[60px] md:w-[100px] lg:w-[160px] xl:w-[220px] mx-auto opacity-95 hover:opacity-100 transition-all duration-500"
-            style={{ height: 'auto' }}
+            className="w-[60px] md:w-[100px] lg:w-[160px] xl:w-[220px] mx-auto opacity-95 hover:opacity-100 transition-all duration-500 translate-y-0"
+            style={{ height: 'auto', transform: 'translateY(6%)' }}
           />
         </div>
         
