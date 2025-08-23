@@ -7,7 +7,7 @@ tmux attach -t Ali1
 du -sh /home/freqtrade/user_data/Subproject-HMM/.venv
 
 # Git
-./notes/git_push_subproject.sh develop "Update Files" origin
+./notes/git_push_subproject.sh main "Update Files" origin
 ./notes/git_pull_subproject.sh develop origin
 
 # Gemini
