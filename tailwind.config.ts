@@ -19,9 +19,9 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-				sans: ['Utendo', 'Inter', 'system-ui', 'sans-serif'],
+				sans: ['Afacad', 'Inter', 'system-ui', 'sans-serif'],
 				display: ['Utendo', 'Inter', 'system-ui', 'sans-serif'],
-				body: ['Outfit', 'Inter', 'system-ui', 'sans-serif'],
+				body: ['Afacad', 'Inter', 'system-ui', 'sans-serif'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',

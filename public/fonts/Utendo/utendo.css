@@ -28,7 +28,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url('./Utendo-Light.otf') format('opentype');
+  src: url('./Utendo-Regular.otf') format('opentype');
 }
 
 @font-face {
@@ -36,7 +36,7 @@
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url('./Utendo-Regular.otf') format('opentype');
+  src: url('./Utendo-Medium.otf') format('opentype');
 }
 
 @font-face {
@@ -44,7 +44,7 @@
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: url('./Utendo-Medium.otf') format('opentype');
+  src: url('./Utendo-Semibold.otf') format('opentype');
 }
 
 @font-face {

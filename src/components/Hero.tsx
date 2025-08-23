@@ -17,7 +17,7 @@ const Hero = () => {
         {/* Logo Section */}
         <div className="mb-6 md:mb-8 animate-fade-in">
           <img 
-            src="/lovable-uploads/5f719a5e-2da5-432e-b4b0-f8853ebb46b2.png" 
+            src="/logos/GridShift-Full-T v2.png" 
             alt="GridShift Logo" 
             className="h-24 md:h-32 lg:h-40 mx-auto mb-4 md:mb-6 hover:scale-105 transition-transform duration-300"
           />
