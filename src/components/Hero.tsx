@@ -33,7 +33,7 @@ const Hero = () => {
           </h1>
           
           <p className="text-base lg:text-lg xl:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed smooth-reveal smooth-reveal-delay-2">
-            A curated collective of independent creators, uniting our skills to build exceptional digital experiences.
+            A collective of independent creators, uniting our skills to build exceptional digital experiences.
           </p>
         </div>
         
