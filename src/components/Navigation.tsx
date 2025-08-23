@@ -19,16 +19,16 @@ const Navigation = () => {
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <nav className="fixed top-0 w-full bg-background/80 backdrop-blur-md border-b border-border z-50">
-      <div className="container mx-auto px-6 py-4">
+    <nav className="fixed top-0 w-full bg-background/80 backdrop-blur-md border-b border-border z-50" style={{ padding: '20px 0' }}>
+      <div className="container mx-auto px-6">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center">
             <img 
               src="/logos/GridShift-Mark-T v2.png" 
               alt="GridShift Logo" 
-              className="h-[80%] md:h-[80%] lg:h-[80%]"
-              style={{ transform: 'scale(0.8)' }}
+              className="h-6 md:h-8"
+              style={{ transform: 'scale(0.8)', marginTop: '2px' }}
             />
           </Link>
 
