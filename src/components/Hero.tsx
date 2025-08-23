@@ -19,7 +19,7 @@ const Hero = () => {
           <img 
             src="/logos/GridShift-Full-T v2.png" 
             alt="GridShift" 
-            className="w-[220px] md:w-[260px] lg:w-[320px] xl:w-[380px] mx-auto opacity-95 hover:opacity-100 transition-all duration-500"
+            className="w-[180px] md:w-[220px] lg:w-[280px] xl:w-[340px] mx-auto opacity-95 hover:opacity-100 transition-all duration-500"
             style={{ height: 'auto' }}
           />
         </div>
@@ -33,7 +33,7 @@ const Hero = () => {
           </h1>
           
           <p className="text-base lg:text-lg xl:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed smooth-reveal smooth-reveal-delay-2">
-            A collective of independent creators, uniting our skills to build exceptional digital experiences.
+            A curated collective of independent creators, uniting our skills to build exceptional digital experiences.
           </p>
         </div>
         
