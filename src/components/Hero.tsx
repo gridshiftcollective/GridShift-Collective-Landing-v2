@@ -13,25 +13,25 @@ const Hero = () => {
       <div className="hidden lg:block absolute top-1/3 right-1/3 w-1 h-1 bg-accent/60 rounded-full parallax-float-delay"></div>
       <div className="hidden lg:block absolute bottom-1/3 left-1/5 w-1 h-1 bg-accent/50 rounded-full parallax-float"></div>
       
-      <div className="container mx-auto px-6 lg:px-12 text-center relative z-10 max-w-5xl">
-        {/* Logo with smooth reveal - positioned closer to title */}
-        <div className="mb-8 lg:mb-12 smooth-reveal">
+      <div className="container mx-auto px-6 lg:px-12 text-center relative z-10 max-w-5xl flex flex-col justify-center min-h-screen py-20">
+        {/* Logo with smooth reveal - enlarged and balanced */}
+        <div className="mb-12 lg:mb-16 smooth-reveal">
           <img 
             src="/logos/GridShift-Full-T v2.png" 
             alt="GridShift" 
-            className="h-16 lg:h-20 xl:h-24 mx-auto opacity-90 hover:opacity-100 transition-opacity duration-500"
+            className="h-20 lg:h-28 xl:h-32 mx-auto opacity-90 hover:opacity-100 transition-opacity duration-500"
           />
         </div>
         
-        {/* Main headline with refined typography */}
-        <div className="mb-12 lg:mb-16">
-          <h1 className="text-4xl lg:text-6xl xl:text-7xl font-display font-bold leading-[1.1] mb-6 smooth-reveal smooth-reveal-delay-1">
+        {/* Main headline with refined typography - reduced size for balance */}
+        <div className="mb-16 lg:mb-20">
+          <h1 className="text-3xl lg:text-5xl xl:text-6xl font-display font-bold leading-[1.1] mb-8 smooth-reveal smooth-reveal-delay-1">
             Where <span className="text-gradient">Structure</span>
             <br />
             Meets <span className="text-accent">Creativity</span>
           </h1>
           
-          <p className="text-lg lg:text-xl xl:text-2xl text-muted-foreground max-w-2xl mx-auto leading-relaxed smooth-reveal smooth-reveal-delay-2">
+          <p className="text-base lg:text-lg xl:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed smooth-reveal smooth-reveal-delay-2">
             A curated collective of independent creators, uniting our skills to build exceptional digital experiences.
           </p>
         </div>
